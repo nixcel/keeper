@@ -15,10 +15,9 @@ set :deploy_to, "/home/alex/www/vhosts/jox.la/#{application}"
 
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
-set :scm, "git"
-set :scm_passphrase, "p00p!"
-set :user, "alex"
-set :deploy_via, :remote_cache
+set :scm, :git
+set :scm_passphrase, "t779m020"
 
 role :app, "alex@starkast.net"
 role :web, "alex@starkast.net"
+role :db, "alex@starkast.net", :primary => true
