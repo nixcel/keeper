@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080622145441) do
+ActiveRecord::Schema.define(:version => 20080625171531) do
 
   create_table "costcenters", :force => true do |t|
     t.integer  "account"
