@@ -1,0 +1,236 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,table,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img,abbr{border:0;}
+address,caption,cite,code,dfn,h1,h2,h3,h4,h5,h6,th,var{font-style:normal;font-weight:normal;}
+ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:1.0em;}
+q:before,q:after{content:'';}
+a{text-decoration:none;}
+
+body {
+ background-color: #fff;
+ margin: 0;
+ font-family: 'Helvetica Neue', 'Lucida Sans' , Verdana, Sans-serif;
+ font-size: 14px;
+ color: #4F5155;
+}
+
+a {
+ color: #666;
+ background-color: transparent;
+ font-weight: normal;
+ border-bottom: 1px #ccc solid;
+ padding: 1px 3px;
+}
+
+a:hover {
+	color: #fff;
+	background: #333;
+	border-bottom: 1px #333 solid;
+}
+
+h1 {
+ color: #444;
+ background-color: transparent;
+ border-bottom: 1px solid #D0D0D0;
+ font-size: 16px;
+ font-weight: bold;
+ margin: 24px 0 2px 0;
+ padding: 5px 0 6px 0;
+}
+
+code {
+ font-family: Monaco, Verdana, Sans-serif;
+ font-size: 12px;
+ background-color: #f9f9f9;
+ border: 1px solid #D0D0D0;
+ color: #002166;
+ display: block;
+ margin: 14px 0 14px 0;
+ padding: 12px 10px 12px 10px;
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+form input.input {
+	width: 235px;
+	border: solid 1px #DFDFDF;
+	background: url(../images/bg-input.png) repeat-x left top;
+	padding: .4em;
+	padding-left: .4em;
+	color: #666;
+	font-family: 'Helvetica Neue', Arial;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+form input.inlineInput {
+	width: 100%;
+	border: none;
+	color: #666;
+	font-family: 'Helvetica Neue', Arial;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+form input[type="submit"] {
+	background: url(../images/bg-button-flat.png) repeat-x 0 0;
+	border: solid 1px #dfdfdf;
+	font-size: 14px;
+	font-family: 'Helvetica Neue', Arial;
+	padding: 2px 10px;
+	cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+	background: url(../images/bg-button-flat.png) repeat-x 0 -23px;
+	border: solid 1px #39aae4;
+	color: #fff;
+	text-decoration: none;
+}
+
+form input[type="submit"]:active {
+	background: url(../images/bg-button-flat.png) repeat-x 0 -46px;
+	border: solid 1px #39aae4;
+	color: #ddd;
+}
+
+form input[type="submit"]:focus {
+	outline: 0;
+}
+
+#w {
+	margin: 40px;
+	clear: both;
+}
+
+ul.topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #666;
+	padding: 0 30px;
+}
+
+ul.topbar li {
+	float: left;
+	margin: 0;
+}
+
+ul.topbar li a {
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	padding: 5px 10px;
+	border: none;
+}
+
+ul.topbar li a:hover {
+	background: #333;
+}
+
+.box {
+	width: 200px;
+	background: #dfe5e6;
+	border: 1px #cacfd0 solid;
+	padding: 10px;
+	margin: 0;
+}
+
+.box ul {
+	background-color:#ffffff;
+	border:1px solid #bcbcbc;
+	padding: 5px 0 10px 0;
+}
+
+.box li {
+	margin: 0;
+	padding: 0 15px;
+}
+
+.box li a {
+	border-bottom: 1px #eee solid;
+	display: block;
+	padding: 5px 0;
+}
+
+.box li a:hover {
+	background: #fafafa;
+}
+
+table.list {
+	border-collapse: collapse;
+	margin: 1em 0;
+	width: 100%;
+	font-size: 11px;
+	font-family: 'Lucida Sans', Arial;
+}
+
+table.list th {
+	font-weight: bold;
+	background: #eee;
+}
+
+table.list th, table.list td {
+	padding: .75em;
+	border: 1px solid #ccc;
+	vertical-align: top;
+}
+
+table.details {
+	border-collapse: collapse;
+	margin: 1em 0;
+	width: 100%;
+	font-size: 11px;
+	font-family: 'Lucida Sans', Arial;
+}
+
+table.details th {
+	font-weight: bold;
+	background: #eee;
+}
+
+table.details th, table.details td {
+	padding: .75em;
+	border: 1px solid #ccc;
+	vertical-align: top;
+}
+
+table.details .amount {
+	text-align: right;
+}
+
+#errorExplanation {
+	margin:0;
+	padding:10px 20px;
+	background:#ffffc2;
+	border-bottom:1px solid #ffeda6;
+}
+
+#errorExplanation h2 {
+	margin-top:0;
+	text-align:left;
+	font-size:1.3em;
+	color:#444;
+}
+
+#errorExplanation p, #errorExplanation ul {
+	font-size:1em;
+	color:#666;
+}
+
+#errorExplanation li {
+	font-weight: bold;
+	color: #900;
+}
+
+.fieldWithErrors {
+	font-weight: bold;
+	color: #900;
+}
+

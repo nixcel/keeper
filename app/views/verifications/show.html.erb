@@ -1,0 +1,38 @@
+<h1>Verification #<%=h @verification.id%></h1>
+
+<p><%=  %></p>
+
+<table class="list">
+	<tr>
+		<th style="width: 10%">Date</th>
+		<td><%=h @verification.date %></td>
+	</tr>
+	<tr>
+		<th>Description</th>
+		<td><%=h @verification.description %></td>
+	</tr>
+</table>
+
+<table class="details">
+	<tr>
+		<th>Cost center</th>
+		<th>Debit</th>
+		<th>Credit</th>
+	</tr>
+	<% for transaction in @verification.transactions %>
+	<tr>
+		<td><%=h transaction.costcenter_account %> <%=h find_costcenter(transaction.costcenter_account).name %></td>
+		<td class="amount"><%=h to_c(transaction.debit) %></td>
+		<td class="amount"><%=h to_c(transaction.credit) %></td>
+	</tr>
+	<% end %>
+	<tr>
+		<td class="amount"><strong>Total</strong></td>
+		<td class="amount"><strong><%= to_c sum_up_transactions('debit') %></strong></td>
+		<td class="amount"><strong><%= to_c sum_up_transactions('credit') %></strong></td>
+	</tr>
+</table>
+
+
+<%= link_to 'Edit', edit_verification_path(@verification) %> |
+<%= link_to 'Back', verifications_path %>

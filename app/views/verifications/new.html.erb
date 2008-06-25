@@ -1,0 +1,25 @@
+<h1>New verification</h1>
+
+<% form_for :verification, :url => verifications_path do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date, :class => "input" %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description, :class => "input" %>
+  </p>
+
+<h1>Transactions</h1>
+<p>Please enter your transactions.</p>
+
+<%= render :partial => 'fields', :locals => { :f => f } %>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', verifications_path %>

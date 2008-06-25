@@ -1,0 +1,19 @@
+<h1>Details for user #<%=h @user.id %></h1>
+
+<table class="list">
+	<tr>
+		<th>Email</th>
+		<td><%=h @user.email %></td>
+	</tr>
+	<tr>
+		<th>Hashed password</th>
+		<td><%=h @user.hashed_password %></td>
+	</tr>
+	<tr>
+		<th>Salt</th>
+		<td><%=h @user.salt %>
+</table>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

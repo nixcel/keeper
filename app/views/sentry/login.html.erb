@@ -1,0 +1,8 @@
+<h1>Welcome to Keeper!</h1>
+<p>Please log in using your credentials below.</p>
+
+<% form_tag do %>
+	<%= text_field_tag :email, params[:email], :class => 'input' %><br />
+	<%= password_field_tag :password, params[:password], :class => 'input' %><br />
+	<%= submit_tag "Go ahead!" %>
+<% end %>
