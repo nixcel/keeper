@@ -4,13 +4,15 @@
 
 <table class="list">
 	<colgroup>
+		<col style="width:8%;" />
 		<col style="width:10%;" />
-		<col style="width:66%;" />
+		<col style="width:58%;" />
 		<col style="width:8%;" />
 		<col style="width:8%;" />
 		<col style="width:8%;" />
 	</colgroup>
 	<tr>
+		<th>ID</th>
 		<th>Date</th>
 		<th>Description</th>
 		<th>&nbsp;</th>
@@ -20,6 +22,7 @@
 
 <% for verification in @verifications %>
   <tr class="itemRow<%= cycle(' oddRow', '') %>">
+	<td><%=h verification.id %></td>
     <td><%=h verification.date %></td>
     <td><%=h verification.description %></td>
     <td style="text-align:center"><%= link_to 'Show', verification %></td>

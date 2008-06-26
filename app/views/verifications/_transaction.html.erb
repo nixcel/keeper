@@ -1,7 +1,7 @@
 <% fields_for "verification[transaction_attr][]", transaction do |t| %>
 	<tr class="transaction">
 		<td>
-			<%= t.select :costcenter_account, Costcenter.find(:all).collect { |c| [ c.name, c.account ] }, { :prompt => 'Select a costcenter' }, { :index => nil } %>
+			<%= t.select :costcenter_account, get_all_costcenters, { :prompt => 'Select a costcenter' }, { :index => nil } %>
 		</td>
 		<td style="text-align: center"><%= t.text_field :debit, :class => "inlineInput", :index => nil %></td>
 		<td style="text-align: center"><%= t.text_field :credit, :class => "inlineInput", :index => nil %></td>

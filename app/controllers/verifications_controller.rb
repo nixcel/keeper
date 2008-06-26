@@ -2,7 +2,7 @@ class VerificationsController < ApplicationController
   # GET /verifications
   # GET /verifications.xml
   def index
-    @verifications = Verification.find(:all, :order => 'date DESC')
+    @verifications = Verification.find(:all, :order => 'date ASC')
 
     respond_to do |format|
       format.html # index.html.erb

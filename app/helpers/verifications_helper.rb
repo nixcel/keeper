@@ -11,6 +11,12 @@ module VerificationsHelper
     @verification.transactions.sum(type)
   end
   
+  def get_all_costcenters
+    Costcenter.find(:all, :order => 'account ASC').collect do |c| 
+      [ c.account.to_s + ' ' + c.name, c.account ]
+    end
+  end
+  
   def fields_for_transaction(transaction, &block)
     prefix = transaction.new_record? ? 'new' : 'existing'
     fields_for("verification[#{prefix}_transaction_attr][]", task, &block)
